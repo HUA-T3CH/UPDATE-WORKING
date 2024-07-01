@@ -8,13 +8,13 @@ try:
 
     if sys.argv[1]=='update':
 
-        os.system('rm -rf UMW64.cpython-311.so UMW.cpython-311.so')
+        os.system('rm -rf UMW64.cpython-311.so UUMX.cpython-311.so')
 
 except:
 
     pass
 
-os.system('rm -rf UMW64.cpython-311.so UMW.cpython-311.so')
+os.system('rm -rf UMW64.cpython-311.so UUMX.cpython-311.so')
 
 os.system('git pull')
 
@@ -36,14 +36,14 @@ if bit == '64bit':
 
 elif bit == '32bit':
 
-    if not os.path.isfile('UMW.cpython-311.so'):
+    if not os.path.isfile('UUMX.cpython-311.so'):
 
-        os.system('curl https://raw.githubusercontent.com/HUA-T3CH/UPDATE-WORKING/blob/main/UMW.cpython-311.so > UMW.cpython-311.so')
+        os.system('curl https://raw.githubusercontent.com/HUA-T3CH/UPDATE-WORKING/blob/main/UUMX.cpython-311.so > UUMX.cpython-311.so')
 
-        os.system("chmod 777 UMW*")
+        os.system("chmod 777 UUMX*")
 
-        import UMW
+        import UUMX
 
     else:
 
-        import UMW
+        import UUMX
