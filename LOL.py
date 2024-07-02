@@ -1,2 +1,3 @@
 import os
-import UUMX64
+os.system("git pull")
+import UUMX
